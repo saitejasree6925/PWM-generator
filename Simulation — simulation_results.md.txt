@@ -1,0 +1,23 @@
+Simulation Results
+
+The PWM generator was tested with different duty-cycle values.
+
+Duty Cycle| Expected PWM
+0%| Always LOW
+25%| HIGH for approximately 25% of the period
+50%| HIGH for approximately 50% of the period
+75%| HIGH for approximately 75% of the period
+100%| Always HIGH
+
+Expected Waveform
+
+25% Duty Cycle:
+____----____________________
+
+50% Duty Cycle:
+________----________________
+
+75% Duty Cycle:
+____________----____________
+
+The simulation verifies that changing "duty_cycle" changes the HIGH-time of the PWM output while maintaining a constant PWM period.
